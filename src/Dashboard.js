@@ -24,7 +24,6 @@ const Dashboard = (props) =>{
     //Find unique Job Titles
     const UniqueJobTitle = _.uniqBy(userInfo, 'jobTitle');
 
-
     useEffect(()=>{
         filterUserData(selectedJobTitle)
     },[userInfo])
